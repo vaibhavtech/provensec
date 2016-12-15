@@ -1,0 +1,384 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+	<title>e-Mitra</title>
+	<link rel="stylesheet" href="styles/master.css">
+	<script language="javascript" src="js/ajaxCommon.js"></script>
+	<script language="javascript" src="js/sessionCheckCommon.js"></script>
+	<script language="javascript" src="js/userPageFunctions.js"></script>
+	<script language="javascript" src="js/userPageEvents.js"></script>
+	<script language="javascript" src="js/appliactionFeature.js"></script>
+	<script language="javascript" src="js/commonBrowserFunctions.js"></script>   
+      
+	<script language="JavaScript" type="text/JavaScript">
+		function reportpagination(linkObj ){        
+			var linkObjval =''+linkObj;             
+			window.location.href=linkObjval;                 
+		}
+	
+		/* below function added <!-- Release 1.5.9.0  Ticket:P200001527 [Owner:Alok | Date Fixed 23/Feb/2013]  --> */
+		function checkDates(frm){
+			var month=frm.month.value;
+			var year=frm.year.value;
+			var todayDate=new Date();
+			if(year.length!=4 || Number(year) < 1900 || Number(year) > todayDate.getFullYear()){
+				alert("Invalid year entered. Please check the year you have entered.");
+				year="";
+				return false;
+			}else if(month==""){
+				alert("Invalid year entered. Please check the month you have entered.");
+				document.getElementById("month").options.selectedIndex="";
+				return false;
+			}else if((Number(year)==todayDate.getFullYear() && Number(month)>(todayDate.getMonth()+1))){
+				alert("Future Dates cannot be selected");
+				return false;
+			}
+			return true;
+		}	
+		
+		function populateDate(){
+			document.getElementById("month").options.selectedIndex='10';
+		}		
+	</script>
+</head>
+<body onload="dontGoBack();onLoadBody();populateDate();">
+	<!-- Updated By Rajesh Kumawat for UI Maintainance | Date : 27-12-2013 -->
+	<div id="header">
+		<div class="Logo"></div>
+		<div>	
+			<!-- Updated By Rajesh Kumawat for UI Maintainance | Date : 07-08-2013 -->
+			<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link href="styles/master.css" rel="stylesheet" type="text/css" /><script language="javascript" src="/js/browserFunctions.js"></script></head>
+<body>
+	<table width="82%" border="0" align="center" cellpadding="0" cellspacing="0">
+		<tr height="75px">
+			<td align="right" valign="middle" width="75px"><img src="images/Emblem-transparent.png" border="0" align="middle"></td>
+			<td align="center" width="425px">
+				<span style="font-size: 18px; font-family: Arial, Helvetica, sans-serif; color: #C00;"><strong>Government of Rajasthan</strong></span>
+				<br><span style="font-size: 12px; font-family: Arial, Helvetica, sans-serif">Department of Information Technology &amp; Communication</span>
+			</td>
+			<td style="font-size: 11px; color: black;"  width="550px" align="left">				
+				[&nbsp;<a href="javascript:forwardToDifferentPageForDistict('downloads/HelpContact.pdf');">HelpCenter/ContactUs</a>&nbsp;]&nbsp;
+				[&nbsp;<a href="javascript:openLspScaCntz('downloads/Lsp_contact.pdf');">For New Kiosk Contact LSP/SCA </a>&nbsp;]&nbsp;
+				[&nbsp;<a href="javascript:openLspScaCntz('downloads/department_contact_list.pdf');">Line Department Contacts</a>&nbsp;]&nbsp;
+				<!--[&nbsp;<a href="javascript:forwardToDifferentPageForDistict('ContactUs.jsp');">Contact Us </a>&nbsp;]&nbsp;-->
+				<!--[&nbsp;<a href="javascript:openFeedBackCtz('sendmail.jsp');">Feedback</a>&nbsp;]&nbsp;-->
+				[&nbsp;<a href="javascript:openFAQCtz('FAQ_UC.jsp')">FAQ's</a>&nbsp;]&nbsp;
+				<br>
+				[&nbsp;<a href="javascript:forwardToDifferentPageForDistict('downloads/BhamashahHelpCenter.pdf');"><font color="red"><b>Bhamashah Help Desk</b></font></a>&nbsp;]&nbsp;				
+				[&nbsp;<a href="javascript:forwardToDifferentPageForDistict('downloads/Support.pdf');"><font color="red"><b>SSDG Help Desk</b></font></a>&nbsp;]&nbsp;
+				[&nbsp;<a href="javascript:forwardToDifferentPageForDistict('downloads/Contact_Details_Ration.pdf');"><font color="red"><b>Rationcard Help Desk</b></font></a>&nbsp;]&nbsp;
+				[&nbsp;<a href="javascript:forwardToDifferentPageForDistict('downloads/jj.jpg');"><font color="red"><b>Rationcard jj division list</b></font></a>&nbsp;]&nbsp;
+				<br>
+				[&nbsp;<a href="javascript:forwardToDifferentPageForDistict('downloads/KioskWiseNameWrong_28092015_report.xls');"><font color="green"><b>KioskWiseNameWrong_28092015_report</b></font></a>&nbsp;]&nbsp;
+				[&nbsp;<a href="javascript:forwardToDifferentPageForDistict('downloads/KioskWisePhotoWrong_28092015_report.xls');"><font color="green"><b>KioskWisePhotoWrong_28092015_report</b></font></a>&nbsp;]&nbsp;
+				<br>
+				[&nbsp;<a href="javascript:forwardToDifferentPageForDistict('downloads/SBI_PoS_Manual_HelpDesk.rar');">SBI PoS Manual&HelpDesk</a>&nbsp;]&nbsp;
+				[&nbsp;<a href="javascript:openFAQCtz('downloads/Emitra_Service.pdf')">Service List</a>&nbsp;]&nbsp;
+				[&nbsp;<a href="javascript:forwardToDifferentPageForDistict('downloads/EOILSP.pdf');"><font color="black"><b>Selection of New LSP's EOI</b></font></a>&nbsp;]&nbsp;
+				[&nbsp;<a href="javascript:forwardToDifferentPageForDistict('downloads/RegistratioWin.exe');"><font color="black"><b>OMT TOOL</b></font></a>&nbsp;]&nbsp;
+				[&nbsp;<a href="javascript:forwardToDifferentPageForDistict('downloads/OMT Registration Guidelinenew.pdf');"><font color="black"><b>OMT GUIDELINE</b></font></a>&nbsp;]&nbsp;
+				<br>
+				[&nbsp;<b><font color="red">भामाशाह नांमाकन के कमीशन का  विवरण जानने हेतू क्लिक करें</font></b>&nbsp;<a onclick="openFile('Aug_Final_Bhamasha_August_2015.xlsx')" href="#">Click Here</a>&nbsp;]&nbsp;
+				<!-- APPLICATION VERSION -->
+				&nbsp;<font color=green><b>[&nbsp;Version: 1.5.16.54&nbsp;]</b></font>&nbsp;
+			</td>
+		</tr>
+	</table>
+	<div id="blink1" class="tagline" style="text-align: center; color: NAVY">
+		<marquee onmouseover="this.stop();" onmouseout="this.start();"
+			scrollamount="3" scrolldelay="3">
+			<b><font color=NAVY>
+				<font color="#800000">
+					भामाशाह से संबंधित समस्यों के लिए यहा संपर्क करें 0141-4030695 &nbsp; ई-मेल bhamashah.helpdesk@ilfstechnologies.com&nbsp;&nbsp;&nbsp; 
+					नामांतरण ,सीमाज्ञान,आपसी सहमती से बटवारे और आवासीय भूमी का पट्टा की आवेदन सेवायें सम्पूर्ण राजस्थान में प्रारम्भ कर दी गई हैं |&nbsp;&nbsp;&nbsp; 
+					भामाशाह परिवार नामांकन विवरण सेवा प्रारम्भ कर दी गई हैं |&nbsp;&nbsp;&nbsp;
+				</font> 
+				Please download emitra pdf signed application<a onclick="openFile('emitraPdfSignSetup.rar')" href="#"> Click here </a>&nbsp;&nbsp;&nbsp;&nbsp; 
+				"डिजिटल प्रमाण पत्र डाउनलोड करने के लिए दिशानिर्देश <a onclick="openFile('DigitalCertificateDelivered.pdf')" href="#"> Click here </a>"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				"विभागीय योजनाओं के बारे में जानकारी प्राप्‍त करने के लिए टोल फ्री नम्‍बर 1800-180-6127 पर सम्‍पर्क करें।" &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				Citizen Contact Centre Number Toll Free<font color=blue size=2> 1800 180 6127</font> (8:00 AM To 8:00 PM),
+			</font></b>
+		</marquee>  
+		<marquee onmouseover="this.stop();" onmouseout="this.start();" scrollamount="3" scrolldelay="3">
+			<font color ="#00A300">New service Answer Booklet Copy has been started under BSER Ajmer Dept</font>&nbsp;&nbsp;&nbsp;&nbsp;
+			<font color ="#00A300">सभी कीयोस्क धारकों को सूचित किया जाता है कि आज ही Biometric Device क्रय करना सुनिसिचत कर लें |</font>&nbsp;&nbsp;&nbsp;&nbsp;
+			<font color ="#00A300">जयपुर,जोधपुर,अजमेर,कोटा,बूंदी,झालावार,टोंक और बारां  जिलों में ई-मित्र पर LED वितरण का कार्य प्रारम्भ कर दिया गया है</font>&nbsp;&nbsp;&nbsp;&nbsp;
+			<font color ="#00A300">Junior Judicial Assistant and Clerk Grade - II_Services started under Rajasthan High Court</font><a onclick="openFile('INSTRUCTIONS-JJA-15.pdf')" href="#">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<font color ="#00A300"> Junior Personal Assistant and Stenographer Grade - II_Services started under Rajasthan High Court</font><a onclick="openFile('INSTRUCTIONS-JPA-15.pdf')" href="#">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<font color ="#00A300">LED Bulb के मांग तथा वितरण्‍ा की सेवायें ईमित्र पोर्टल पर प्रारम्‍भ कर दी गई है गाईडलाईन डाउनलोड करे</font><a onclick="openFile('EESL LED Bulb v2.0.rar')" href="#">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<font color ="#00A300">Token once issued for UG Srvs of Medical Education Department will not be cancelled</font>&nbsp;&nbsp;&nbsp;&nbsp;
+			<font color ="#00A300">Deposition of Counselling Fees for UG (Medical/Dental) 2015_Srvs started under Medical Education Department</font>&nbsp;&nbsp;&nbsp;&nbsp;	
+			<font color ="#00A300">Video Conferencing से connect होने के लिए पुराने software को  हटाये  और नया software download करने के लिए  </font><a onclick="openFile('peoplelinkv3.8.6.3.exe')" href="#">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp;	
+			<font color="#00A300">Social Justice Service has been started on emitra portal</font> <a href="#" onClick="openUrl('http://sje.rajasthan.gov.in')">Click Here</a> &nbsp;&nbsp;&nbsp;&nbsp;								
+			<font color ="#00A300">PAYTM wallet की सुविधा online user के लिए प्रारम्भ कर दी गई है|</font><a onclick="openFile('Guidelines_for_online_user_Paytm wallet.pdf')" href="#">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp;			
+			<font color ="#00A300">राशन के FOOD COUPEN वितरण की सेवा से  संबंधित GUIDELINE तथा DEVICE DRIVER डाउनलोड करें।</font><a onclick="openFile('Guideline_Food_Coupon_Services_v1.0.rar')" href="#">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp;			
+			<font color ="#00A300">SBI MicroATM Payment Mode के लिए Guideline यहा से डाउनलोड करें।</font><a onclick="openFile('Guideline_Payment_Mode_MicroATM_SBI.pdf')" href="#">Click Here</a>&nbsp;
+			<font color ="#00A300">SBI challen for UID(aadhar certified) operator/supervisor exam</font><a onclick="openFile('nseit_ChallanReciept.pdf')" href="#">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<font color ="#00A300">Kiosk List_Jaipur Metro Smart Cards</font><a onclick="openFile('List_of_Kiosks _in _Jaipur_City_Jaipur_Metro_Smart_Cards.pdf')" href="#">Click Here</a>&nbsp;&nbsp;&nbsp;&nbsp;  
+			<font color="#00A300">SBI MircoATM के लिये कियोस्‍क विवरण Format डाउनलोड करे</font> <a onclick="openFile('Format_for_POS_MicroATM_KioskDtl_new.xls')" href="#">Click Here</a> &nbsp;&nbsp;&nbsp;&nbsp; 
+			<font color="#00A300">Deposit Registration and other fee service under Registration and Stamps department is now available in emitra</font><a onclick="openFile('Guideline_for_IGRS_Services.pdf')" href="#">Click Here</a> &nbsp;&nbsp;&nbsp;&nbsp; 
+			<font color="#00A300">"जिन कियोस्कों पर OMT Tool Install नही किया गया था उन्हें Deactive किया गया है ऐसे सभी कियोस्क emitra.gov.in से नया OMT Tool Install करके mukesh5858@yahoo.co.in,gopi.gaurav955@gmail.com,9414225343,8302928486 पर सूचित करें कियोस्क पुनः चालू कर दिया जाएगा।".</font> &nbsp;&nbsp;&nbsp;&nbsp; 
+			<font color="#00A300">Agriculture department license renewable services are now available on emitra</font>&nbsp;&nbsp;&nbsp;&nbsp; 
+			<font color="#00A300">भामाशाह के संबंध में आधार नांमाकन एवं अाधार संख्‍या जानने के लिए यहां क्लिक करें</font> <a onclick="openFile('GuidelineforKnowEIDUID.pdf')" href="#">Click Here</a> &nbsp;&nbsp;&nbsp;&nbsp;
+			 
+			<font color="NAVY"><b>
+				<font color="#00A300">CIRCULAR_Regarding delivery of RATION CARD services through emitra kiosk</font> <a onclick="openFile('CircularRation2015.pdf')" href="#">Click Here</a> &nbsp;&nbsp;&nbsp;&nbsp;
+				<font color="#00A300">Token once issued for Univ. of Raj. (UoR) services will not be cancelled</font>&nbsp;&nbsp;&nbsp;&nbsp;
+				<font color="#00A300">Kiosk List_Jaipur Metro Smart Cards</font> <a href="#" onClick="openUrl('List_of_Kiosks _in _Jaipur_City_Jaipur_Metro_Smart_Cards.pdf')">Click Here</a> &nbsp;&nbsp;&nbsp;&nbsp; 
+				<font color="#00A300">BHAMASHAH NEW SERVICE ENTRY LINK</font> <a href="#" onClick="openUrl('http://164.100.222.69:8080/bhamashahqc/login')">Click Here</a> &nbsp;&nbsp;&nbsp;&nbsp;
+				<font color="#00A300">Guidelines for Bhamashah Services(Login on Bhamashah portal)</font> <a onclick="openFile('GuidelineforBhamashahv11.pdf')" href="#">Click Here</a> &nbsp;&nbsp;&nbsp;&nbsp; 
+				<font color="#00A300">त्रुटि रहित भामाशाह नामांकन सुनिशिचत करने क लिए धयान देने योग्य बिन्दु |</font>
+				<font color="red"><a onclick="openFile('bhamashahyozana.PDF')" href="#">Click here </a></font> &nbsp;&nbsp;&nbsp;&nbsp; 
+				<font color="#00A300">E-mitra पर भामाशाह योजना मे नये सदस्य जोड़ने एवं सदस्यों की त्रुटियों को सही करने की सेवा आरम्भ कर दी गई है. भामाशाह योजना से संबंधित महत्बपूर्ण सूचना |</font> <font color="red">CIRCULAR</font> <a onclick="openFile('Bhamashah_circular.pdf')" href="#">Click Here</a> <font color="red">GUIDELINE</font> <a onclick="openFile('GuidelineforBhamashahv12.pdf')" href="#">Click Here</a> &nbsp;&nbsp;&nbsp;&nbsp; 
+				<font color="red">To login at Housing Board Portal.</font> <a href="#" onClick="openUrl('http://164.100.222.102:1001/SEPL.PWIMS.Estate.Web.UI/Applicant/Profile/LoginHome.aspx?isexternalproject=1&IsUser=1')">Click Here</a> &nbsp;&nbsp;&nbsp;&nbsp;
+				<font color="red">Rajasthan Pollution control board services are availabe under emitra</font> <a onclick="openFile('GuidelineforRSPCBServices.pdf')" href="#">Click here </a> &nbsp;&nbsp;&nbsp;&nbsp; 
+				<font color="red">नये राशन कार्ड के लिए, राशन कार्ड में त्रुटि को ठीक कराने के लिए एवं राशन कार्ड का वितरण इत्यादि सेवाए शिघ्र ही Emitra से प्रारम्भ की जा रही हैं |</font> <a onclick="openFile('EmitraCircularRatesRationCardCorrigendum.PDF')" href="#">Click here </a> &nbsp;&nbsp;&nbsp;&nbsp; 
+				<font color="red">कोई भी kiosk बिना OMT TOOL के नहीं चलेगा |</font> <a onclick="openFile('OMTRegistrationGuidelinenew.pdf')" href="#"> Click here </a> &nbsp;&nbsp;&nbsp;&nbsp; <font color="red">नामांतरण ,सीमाज्ञान,आपसी सहमती से बटवारे और आवासीय भूमी का पट्टा की आवेदन सेवायें सम्पूर्ण राजस्थान में प्रारम्भ कर दी गई हैं |</font> <a onclick="openFile('Downloadsupdate.rar')" href="#"> Click here </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				<font color="red">बिजली पानी के आबेदन की सेवायें बीकानेर और जयपुर जिलों के लिए प्रारम्भ कर दी गई हैं |</font> <a onclick="openFile('Downloads.rar')" href="#">Click here </a> &nbsp;&nbsp;&nbsp;&nbsp; <font color="red">All Emitra/CSCs can become IRCTC agents.</font> <a href="#" onClick="openUrl('http://164.100.40.23/irctc/vle_Irctc_regform.aspx')" target="_blank">Click here</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				<font color="red">Now, Reset Password facility available at LSP level. For reset password send email to your LSP.</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				<font color="red">Service under Misc department (Digital Caste OBC for Central) has been started for all Districts.</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				<font color="red">Kiosk पर कोई भी Receipts cancel नही होगी , Cancellation के लिए अपनी LSP से सम्पर्क करे |</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				<font color="red">कीयोस्क को Active/Deactive केवल LSP की अधिक्रत E-Mail से प्राप्त Request के आधार पर ही किया जायेगा | अत: कीयोस्क धारक LSP से सम्पर्क करें |</font> <a onclick="openFile('lspcontactlist.xlsx')" href="#"> Click here</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				<font color="red">CSC-SPV की सभी सेवाए recharge and bill payment अब oxigen service (prepaid) मे प्रारम्भ कर दी गई है, और CSC-SPV Service बन्द कर दी गई है|</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				<font color="red">जिन कियोस्कों की फण्ड ट्रान्सफर के बाद भी लिमिट रिलीज नही हुई है वो फण्ड ट्रान्सफर मीनू में आज के reconcile failed ट्रान्सफर में जाकर वेरीफाई करें |</font> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				<font color="red">Police Clearance Certificate Services has been started For Guideline</font> <a onclick="openFile('policeclearance.pdf')" href="#"> Click here</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				<font color="red">Birth and Death Certificate Services has been started in all Districts.</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				<font color="red">For Guideline</font> <a onclick="openFile('GuidelineMutationSimagyanDivisionandPatta.rar')" href="#"> Click here </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				<font color="red">Electricity,Water,Mobile bill,BSNL landline bills can also be deposited through Android and Windows Mobile For More Detail</font> <a onclick="openFile('Mobile_Apps_press_releas.docx')" href="#"> Click here </a> &nbsp;&nbsp;&nbsp;&nbsp;  
+				<font color="red">राजस्थान संपर्क के माध्यम से जनता की सभी प्रकार की समस्याओ के निवारण के लिए ई मित्रा केंद्र पर भी आवेदन दर्ज कराने की सुविधा प्रारम्भ कर दी गई है!</font> 
+			</b></font>
+		</marquee>
+	</div>
+</body></html>
+			<div id="nav"><a href="myEMitra.jsp"><img src="images/myemitra.gif" width="80" height="22" border="0"></a></div>
+			<!-- Ends By Rajesh -->
+		</div>
+	</div>
+	<div class="clear"></div>
+        
+	<div id="MainContainer">
+		<div id=LeftNav><!-- Updated By Rajesh Kumawat for UI Maintainance | Date : 07-08-2013 -->
+            <div id=sidebar style="float:left;">
+                <ul>
+                	<li class=view-all><a href="/loadPendingBills.do">Pending Bills</a></li>
+                	<li class=view-all><a href="/loadSubscribeServicePage.do">Subscribe to Services</a></li>
+                    <li class=view-all><a href="/unSubscribeSrvc.jsp">Unsubscribe</a></li>
+                    <li class=view-all><a href="/loadMyEMitraPage.do">Pay Utility Bills</a></li>
+                    <li class=view-all><a href="/getTransHstryRltdUser.do">Transaction History</a></li>
+                    <li class=view-all><a href="/subscribeServices.do">View Your Services</a></li>
+                    <li class=view-all><a href="/applicationGrievance.do?method=searchApGrievance">Application/Grievance Status</a></li>
+                    <li class=view-all><a href="/SrchtrnsHstryByRcpt.do">Search Transaction</a></li>
+                    <li class=view-all><a href="/ctznDwnldFils.jsp">Downloads</a></li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+        </div>
+            
+		<form name="sessionCheck">                
+			<input name="sessionClass" type="hidden" value="com.emitra.apps.web.action.UserSessionAttributes"  >                     
+			<input name="sessionExpired" type="hidden" 
+                    value=  "<div class='fullspace'>
+                    	<div class='clear'></div>
+                    	<div class='h4'>This page has expired</div>
+                    	<div class='txt'>
+                    		<p>Please go to homepage and login again</p>
+                    	</div>
+                	</div>">
+		</form>
+         
+		<div id="Body">
+			<div class="space"></div>
+			<div class="col1">
+				<div class="space"></div>
+				<div class="leftnavhead">
+					  gopesh kumar jangid ,
+					<span class="inst" style="padding-left:0px; font-size:12px;">
+						village-naya gaon maphy,halena,bharatpur Bharatpur, RAJASTHAN
+						<a href="/loadEditProfilePage.do">Edit Profile</a> 
+						| <a href="/changePassword.jsp">Change Password</a>
+						
+						 | <a
+						href="index.jsp?logout=Y">Logout</a>[x]
+						
+				
+					</span>
+				</div>
+				<div class="hrule"/></div>   
+				<div class="clear"></div>
+				<div id="sessionOn"></div>
+				<div class="clear"></div>
+				<div class="h4">Transaction History</div>
+			</div>
+			<div class="clear"></div>
+			<br><b><font color="red">अगर आपको ऑनलाइन फीस जमा कराने के बाद भी टोकन नंबर प्राप्त नहीं होता है, तो सर्वप्रथम 15 मिनट  तक अपनी Transaction History चेक करे अगर फिर भी आपको टोकन नंबर प्राप्त नहीं होता है , तो आपकी फीस स्वतः ही आपके संबंधित बैंक खाते में रिफंड कर दी जाएगी और आप पुनः Transaction कर सकते है.</font></b>
+			<div class="hrule"/></div>
+			
+			<!--below form added --Ticket:P200001527 Release 1.5.9.0 [Owner:Alok | Date Fixed 23/Feb/2013]  -->
+			<form action="/getTransHstryRltdUser.do" onsubmit="return checkDates(this)" name="filterForm">
+				<table>
+					<tr><td>Month</td><td>Year</td></tr>                                
+					<tr>
+						<td>
+							<select name="month" id='month'>
+								<option value="">--Select Month--</option>
+								<option value="01">JANUARY</option>
+								<option value="02">FEBRUARY</option>
+								<option value="03">MARCH</option>
+								<option value="04">APRIL</option>
+								<option value="05">MAY</option>
+								<option value="06">JUNE</option>
+								<option value="07">JULY</option>
+								<option value="08">AUGUST</option>
+								<option value="09">SEPTEMBER</option>
+								<option value="10">OCTOBER</option>
+								<option value="11">NOVEMBER</option>
+								<option value="12">DECEMBER</option>
+							</select>
+						</td>
+						<td><input type="text" name="year" id="year" value="2015" size="4"/></td>
+						<td><input type="submit" value="Filter"/></td>
+					</tr>
+				</table>
+			</form>
+		
+			
+			
+				<div class="txt">
+				    Get Detail Transaction History by click on Detail Link. 
+				</div>
+				<div class="space"></div>
+				<table width="100%" border="0" cellspacing="0" cellpadding="0">
+					<tr>
+						<td height="18" class="borderthree">
+						    Transaction History
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<table cellpadding="0" cellspacing="0" class="grid">
+								<tr>
+									<!--below line added--Ticket:P200001526 [Owner:Alok | Date Fixed 19/Feb/2013]  -->
+									<td nowrap class="gridhead">S.No.</td>
+									<td nowrap class="gridhead">Receipt No</td>
+									<td nowrap class="gridhead">Token No</td>
+									<td nowrap class="gridhead">Receipt Date</td>
+									<td nowrap class="gridhead">Department</td>
+									<td nowrap class="gridhead">Service</td>
+									<td nowrap class="gridhead">Consumer Key</td>
+									<td nowrap class="gridhead">Service Specifications</td>
+									<td nowrap class="gridhead">Transaction Date</td> 
+									<td nowrap class="gridhead">Amount Paid</td>                                              
+									<td nowrap class="gridheadright">Detail</td>
+								</tr>
+	                                   
+								
+										<tr>                                                
+											<!--Below line modified--Ticket:P200001526 [Owner:Alok | Date Fixed 19/Feb/2013]  -->
+											<td class="gridrow">1</td>
+											<td class="gridrow">1599099910273498</td>
+											<td class="gridrow">1599099912360884</td>
+											<td class="gridrow">05-10-2015 18:10</td>
+											<td class="gridrow">Rajasthan High Court</td>
+											<td class="gridrow">Fee for Junior Personal Assistant and Stenographer Grade - II</td> 
+											<td class="gridrow">72 JUL 1990214112</td>  
+											<td class="gridrow">GOPESH KUMAR JANGID-BHARAT LAL JANGID-2 JUL 1990-7-2-1-4-1-1-2</td> 
+											<td class="gridrow">05-Oct-2015</td>
+											<td class="gridrow">110.00</td>
+											<td class="gridrowright">
+												<a href="/detailTransHstryReport.do?trnHstrRltdUsr=true&reciptNo=1599099910273498&tokenNo=1599099912360884&serviceCode=2047&consKey=72 JUL 1990214112&transDoneBy=gopesh kumar jangid &madeAt=Online&remark=Service Bill Paid&lastModified=05-Oct-2015&status=paid&srvNm=Fee for Junior Personal Assistant and Stenographer Grade - II&deptNm=Rajasthan High Court&billSpcfc=GOPESH KUMAR JANGID-BHARAT LAL JANGID-2 JUL 1990-7-2-1-4-1-1-2&month=10&year=2015">Detail</a>
+											</td>
+										</tr>                                   
+								
+							</table>                                         
+						</td>
+					</tr>
+					<tr>
+						<td align="center">
+						    
+						        
+
+
+
+
+
+
+<table>
+	<tr>
+		<td height="15px"> </td>
+	<tr>
+</table>
+
+
+
+						    
+						</td>     
+					</tr>
+				</table>        
+			 
+		</div>  
+	</div>
+	<div class="clear"></div>
+	
+<html>
+   <head>
+       <link rel="stylesheet" href="styles/master.css">
+   <script language="JavaScript">
+   function openAboutUsCtz(link){
+   window.open(link,"_media","width=600,scrollbars=yes");
+   }
+  function openFAQCtz(link){
+   window.open(link,"_media","width=600,scrollbars=yes");
+   }
+  function openContactUsCtz(link){
+   window.open(link,"_media","height=300,width=450,scrollbars=yes");
+   }
+  function openFeedBackCtz(link){
+   window.open(link,"_media","height=400,width=550,scrollbars=yes");
+   } 
+  function openMindtreeCns(link){
+   window.open(link,"_media");
+  }
+  function openDoit(link){
+   window.open(link,"_media");
+  }
+  </script>  
+  </head>
+ <body>
+	<div id="footer">
+         <div class="footercontent">
+         <a href="javascript:openAboutUsCtz('AboutUs.jsp')">About us</a> | 
+         <a href="javascript:openFAQCtz('FAQ_UC.jsp')">FAQ's</a> | 
+         <a href="javascript:openContactUsCtz('ContactUs.jsp');">Contact Us </a> | 
+         <a href="javascript:openFeedBackCtz('sendmail.jsp');">Feedback</a> | 
+         <a href="#" onClick="discl();">Disclaimer. </a>
+         <br>Best viewed at 1024*768 resolution on Internet Explorer
+         <br>@ 2007 Designed and developed by 
+         <a href="javascript:openDoit('http://www.mindtree.com/');" title="External website opens in a new window">
+         	MindTree Ltd.
+         </a> & 
+         <a href="javascript:openMindtreeCns('http://www.doitc.rajasthan.gov.in/');" title="External website opens in a new window">
+         	DoIT & C-Rajasthan
+         </a> 
+	</div>
+	</div>
+</body>
+</html>
+
+</body> 
+</html>

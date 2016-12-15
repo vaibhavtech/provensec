@@ -1,0 +1,44 @@
+.reveal-modal-bg {position: fixed; height: 100%; width: 100%; background: #000; background: rgba(0,0,0,.8); z-index: 100; display: none; top: 0; left: 0;}	
+.reveal-modal { visibility: hidden; top: 100px; /*width: 820px;*/ position: absolute; z-index: 101; float: none; width: 100%; margin: 0 auto; /*left: 50%; margin-left: -300px; width: 520px; margin-left: -450px; background: #eee url(modal-gloss.png) no-repeat -200px -80px; padding: 30px 40px 34px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px; -moz-box-shadow: 0 0 10px rgba(0,0,0,.4); -webkit-box-shadow: 0 0 10px rgba(0,0,0,.4); -box-shadow: 0 0 10px rgba(0,0,0,.4); */}
+.reveal-modal.small 		{ width: 200px; margin-left: -140px;}
+.reveal-modal.medium 		{ width: 400px; margin-left: -240px;}
+.reveal-modal.large 		{ width: 600px; margin-left: -340px;}
+.reveal-modal.xlarge 		{ width: 800px; margin-left: -440px;}
+.reveal-modal .close-reveal-modal {font-size: 24px; line-height: 1; float: right; color: #eee; text-shadow: 0 -1px 1px rbga(0,0,0,.6); font-weight: bold; cursor: pointer; text-decoration: underline; /* text-align: right; position: absolute; top: 6px; right: 1px; */}
+.mypopup h2{text-align:right;}
+.mypopup{background: #ffe4c4; width:50%; margin:0 auto; float:none; min-height:370px;}
+.mypopup h4{font-size:120%; margin-top:30px; color:#fff; text-align:left; margin-left: 0; padding-left: 0;}
+.mypopup h1{font-size:300%; text-align:center; color:#fff;}
+.mypopup h3{font-size:170%; text-align:center; color:#FFCF2E; font-family: cursive;}
+.mypopup p{font-size:100%; margin-top:10px; color:#fff; text-align:left;}
+@media only screen and (max-width: 1280px) {
+	.mypopup{width:60%;}
+/*	.mypopup h2{font-size: 200%;}
+	.mypopup h4{margin-top:25px;}*/
+}
+@media only screen and (max-width: 980px) {
+	.mypopup{width:70%;}
+	.mypopup h2{float:left; width: 60%; font-size:200%;}
+	.mypopup h4{float:left; width: 35%;}
+}
+@media only screen and (max-width: 800px) {	
+	.mypopup{width:85%;}
+}
+@media only screen and (max-width: 480px) {
+	.mypopup{width:95%; padding: 1px;}
+	.mypopup h2{float: left; font-size: 140%; text-align: right; width: 55%; padding: 0;}
+	.mypopup h4{font-size: 14px; padding: 0; width: 45%; margin-top: 23px;}
+	.mypopup p{font-size: 12px; padding: 0;}
+}
+@media only screen and (max-width: 360px) {
+	.mypopup{width:95%; padding: 1px;}
+	.mypopup h2{float: left; font-size: 104%; text-align: right; width: 55%; padding: 0;}
+	.mypopup h4{font-size: 12px; padding: 0; width: 45%; margin-top: 23px;}
+	.mypopup p{font-size: 12px; padding: 0;}
+}
+@media only screen and (max-width: 320px) {
+	.mypopup{width:95%; padding: 1px;}
+	.mypopup h2{float: left; font-size: 95%; text-align: right; width: 55%; padding: 0;}
+	.mypopup h4{font-size: 11px; padding: 0; width: 45%; margin-top: 23px;}
+	.mypopup p{font-size: 10px; padding: 0;}
+}

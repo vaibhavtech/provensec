@@ -1,0 +1,13 @@
+[07-Aug-2013 23:15:18] PHP Parse error:  syntax error, unexpected T_FUNCTION in /home4/naturfg4/public_html/tmp/ddd_master/app/Plugin/DebugKit/Controller/Component/ToolbarComponent.php on line 182
+[07-Aug-2013 23:15:41] PHP Parse error:  syntax error, unexpected T_FUNCTION in /home4/naturfg4/public_html/tmp/ddd_master/app/Plugin/DebugKit/Controller/Component/ToolbarComponent.php on line 182
+[08-Aug-2013 11:54:04] PHP Parse error:  syntax error, unexpected T_FUNCTION in /home4/naturfg4/public_html/tmp/ddd_master/app/Plugin/DebugKit/Controller/Component/ToolbarComponent.php on line 182
+[07-Jun-2016 14:23:09 UTC] PHP Fatal error:  Call to a member function getMessage() on a non-object in /home/pianoinfotech/public_html/newisms/app/Controller/RiskTreatmentsController.php on line 385
+[07-Jun-2016 14:31:25 UTC] PHP Fatal error:  Call to a member function getMessage() on a non-object in /home/pianoinfotech/public_html/newisms/app/Controller/RiskTreatmentsController.php on line 385
+[07-Jun-2016 14:31:28 UTC] PHP Fatal error:  Call to a member function getMessage() on a non-object in /home/pianoinfotech/public_html/newisms/app/Controller/RiskTreatmentsController.php on line 385
+[07-Jun-2016 14:31:34 UTC] PHP Fatal error:  Call to a member function getMessage() on a non-object in /home/pianoinfotech/public_html/newisms/app/Controller/RiskTreatmentsController.php on line 385
+[07-Jun-2016 15:29:44 UTC] PHP Fatal error:  Class 'debugger' not found in /home/pianoinfotech/public_html/newisms/app/Controller/RiskTreatmentsController.php on line 334
+[07-Jun-2016 15:29:52 UTC] PHP Fatal error:  Class 'debugger' not found in /home/pianoinfotech/public_html/newisms/app/Controller/RiskTreatmentsController.php on line 334
+[07-Jun-2016 16:30:58 UTC] PHP Fatal error:  Class 'debugger' not found in /home/pianoinfotech/public_html/newisms/app/Controller/RiskTreatmentsController.php on line 334
+[08-Jun-2016 05:21:31 UTC] PHP Fatal error:  Class 'debugger' not found in /home/pianoinfotech/public_html/newisms/app/Controller/RiskTreatmentsController.php on line 334
+[08-Jun-2016 05:24:44 UTC] PHP Fatal error:  Class 'debugger' not found in /home/pianoinfotech/public_html/newisms/app/Controller/RiskTreatmentsController.php on line 334
+[23-Jun-2016 12:35:36 UTC] PHP Fatal error:  Call to a member function find() on a non-object in /home/pianoinfotech/public_html/newisms/app/Controller/OrganizationsController.php on line 108

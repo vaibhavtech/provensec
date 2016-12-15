@@ -1,0 +1,7 @@
+.footer {
+position:relative;
+width:100%;
+height:500px;
+display: block;
+background:url("D:\xampp\htdocs\newisms\app\webroot\img\footer.css") no-repeat center top;
+}
